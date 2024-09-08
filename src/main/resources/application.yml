@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: blue-green
+logging:
+  file:
+    name:  /logs/blue-green.log
+    path: /logs

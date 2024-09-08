@@ -1,0 +1,11 @@
+services:
+  blue-green-container-green:
+    container_name: blue-green-container-green
+    restart: unless-stopped
+    image: blue-green-image:latest
+    environment:
+      - DEPLOY_TYPE=GREEN
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./logs:/logs
